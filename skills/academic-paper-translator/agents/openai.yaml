@@ -1,0 +1,4 @@
+"interface":
+  "display_name": "学术论文翻译助手"
+  "short_description": "完整翻译英文科研论文，保留公式与图表，输出经过逐页检查的可编辑中文 Word。"
+  "default_prompt": "使用 $academic-paper-translator 把这篇英文论文完整翻译成中文并输出 Word。"

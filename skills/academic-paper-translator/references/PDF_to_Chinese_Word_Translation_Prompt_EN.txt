@@ -1,0 +1,266 @@
+Please translate the PDF document I provide into Chinese in full and deliver the final result as a Microsoft Word (.docx) document. The translation, mathematical typesetting, figures, tables, references, and document layout must strictly follow the requirements below.
+
+1. General principles
+
+1. Translate the complete source document. Do not summarize, omit, abbreviate, paraphrase, condense, or skip any part of the original text.
+   - Translate the document paragraph by paragraph in the original order.
+   - Fully process the main text, titles, headings, subheadings, figure captions, table captions, equation explanations, footnotes, appendices, supplementary notes, and all other textual elements.
+   - Do not remove content merely because it is repetitive, lengthy, highly technical, or difficult to translate.
+   - Do not rewrite the paper as a summary, interpretation, review, or commentary.
+
+2. Accuracy in conveying the original scientific meaning takes priority over stylistic fluency. Subject to that requirement, the Chinese translation should read naturally and professionally in the style of a scientific paper, patent, or formal technical document.
+
+3. Do not introduce conclusions, explanations, evaluations, interpretations, or background information that do not exist in the source document.
+
+4. For specialized terminology whose translation is uncertain, determine the most appropriate Chinese equivalent from the full-document context and use the same translation consistently throughout the document.
+
+2. Main-text translation
+
+1. Preserve the original section structure and logical hierarchy. Sections such as Abstract, Introduction, Results, Discussion, Methods, Materials and Methods, Conclusion, Supplementary Information, and References must remain in their original structural positions, while section titles should be translated into Chinese where appropriate.
+
+2. Preserve the original paragraph structure as much as reasonably possible. Do not arbitrarily merge independent paragraphs or unnecessarily split one coherent paragraph into many short paragraphs.
+
+3. Long English sentences may be reordered to conform to natural Chinese syntax, but all logical relations must be preserved, including causality, contrast, conditions, comparison, variable references, and the correspondence between experimental subjects, methods, and results.
+
+4. For technical abbreviations:
+   - At first occurrence, use an appropriate format such as Chinese term (English full name, abbreviation), when suitable for the context.
+   - Use the original abbreviation consistently thereafter unless the source text explicitly changes it.
+   - Do not redefine abbreviations arbitrarily.
+
+5. Personal names, software names, algorithm names, instrument models, product model numbers, gene names, protein names, and proper nouns that should not be translated should normally remain in their original form.
+
+3. Citations and reference numbering in the main text
+
+1. Preserve every citation and reference number that appears in the main text.
+
+2. Citation styles such as [1], [2,3], [4–7], superscript citations, and other numbered reference formats must remain at the corresponding positions in the translated text.
+
+3. When reordering sentence structure for Chinese grammar, do not omit citation numbers, change citation numbers, move citations to statements they do not support, or break the correspondence among grouped citations.
+
+4. Citation placement should remain semantically associated with the same statement, evidence, or claim as in the original document.
+
+4. Mathematical variables and equations — use native Microsoft Word equations only
+
+All mathematical variables, physical quantities, mathematical expressions, and equations must be typeset using the native Microsoft Word equation system.
+
+4.1 Core requirements
+
+1. Every mathematical expression must be generated or converted into a native, editable Microsoft Word equation object using OMML (Office Math Markup Language).
+
+Do not use:
+- plain-text approximations of equations;
+- equation images;
+- screenshots of equations;
+- non-editable equation objects;
+- raw LaTeX code displayed directly in the document.
+
+2. LaTeX may be used as an intermediate equation input syntax, but the final content must be converted to and rendered as native Microsoft Word Professional-format equations using the Word equation engine.
+
+3. Every equation in the final DOCX must:
+- render correctly in Microsoft Word;
+- be editable using the Word equation editor;
+- allow continued editing of variables, superscripts, subscripts, fractions, matrices, operators, and other mathematical structures.
+
+4.2 Inline mathematics
+
+Inline variables and short expressions such as x, k_x, NA, λ, I(x,y), 2π, and σ² must be inserted as native inline Word equation objects where they function as mathematical content.
+
+Do not simulate mathematical notation using manually italicized plain text, Unicode superscript/subscript characters, or manually assembled symbols when an actual Word equation object is appropriate.
+
+4.3 Display equations
+
+Every display equation in the source document must:
+- remain a separate display equation;
+- be implemented as a native Word equation object;
+- preserve the original mathematical structure;
+- preserve the original equation number;
+- preserve all cross-references between the equation number and the main text.
+
+Equation labels such as (1), (2), (S1), and (S2) must not be omitted or renumbered unless the source document itself requires it.
+
+4.4 Mathematical structures
+
+Use the corresponding professional structures provided by the Word equation editor for all applicable elements, including:
+- fractions;
+- superscripts and subscripts;
+- integrals;
+- summations;
+- products;
+- limits;
+- radicals;
+- Greek letters;
+- partial derivatives;
+- gradients;
+- vectors;
+- matrices;
+- determinants;
+- brackets and parentheses;
+- absolute values;
+- Fourier transforms;
+- convolutions;
+- piecewise functions;
+- multiline equations;
+- aligned equation structures.
+
+For example, the LaTeX input
+\frac{2NA}{\lambda}
+
+must appear in Word as a true stacked fraction. The final document must not display the literal source string “\frac{2NA}{\lambda}”.
+
+4.5 Mathematical typography
+
+Follow the mathematical typography of the source document and standard scientific conventions as closely as possible:
+- mathematical variables should normally be in mathematical italic;
+- bold and/or italic vector and matrix notation should match the original;
+- mathematical operators and function names such as sin, cos, exp, and log should be upright;
+- technical abbreviations such as FFT, OTF, and PSF should follow normal scientific typography;
+- physical units such as nm, μm, mm, Hz, MHz, s, and ms must be upright, not mathematical italic;
+- do not mechanically italicize every Latin character appearing inside an equation.
+
+4.6 Equation verification
+
+Treat the visually rendered equation in the original PDF as the authoritative source. Do not rely exclusively on extracted PDF text or OCR output when reconstructing equations.
+
+Carefully verify:
+- superscripts;
+- subscripts;
+- Greek letters;
+- upright versus italic type;
+- bold vectors;
+- matrices;
+- fraction nesting;
+- radical scope;
+- bracket scope;
+- multiline alignment;
+- equation numbering.
+
+Pay particular attention to common recognition errors, for example:
+- I₀ incorrectly becoming I0;
+- σ_x² incorrectly becoming σx2;
+- π incorrectly recognized as n;
+- λ incorrectly recognized as a Latin character;
+- a bold/vector k being confused with a scalar k;
+- the unit m in μm incorrectly rendered as a mathematical italic variable.
+
+The final DOCX must not contain unconverted temporary LaTeX delimiters or commands such as $...$, $$...$$, \(...\), \[...\], \frac, \mathrm, or \mathbf as visible raw source text.
+
+5. Figures and figure captions
+
+1. Preserve every figure from the source document, including but not limited to Figures, Schemes, Extended Data Figures, Supplementary Figures, experimental setup diagrams, optical layouts, microscopy images, reconstruction results, plots, and workflow diagrams.
+
+2. Extract figures from the original PDF at the highest practical quality. Do not replace them with low-resolution screenshots unless there is no technically reasonable alternative.
+
+3. Place each figure approximately where it appears in the original document instead of collecting all figures at the end.
+
+4. Preserve the original figure numbering. For example:
+Figure 1 → 图 1
+Figure 2a → 图 2a
+Supplementary Figure 3 → 补充图 3
+Do not renumber figures independently.
+
+5. Translate every figure caption in full. Do not translate only the caption title while omitting subpanel descriptions (a, b, c, etc.), experimental conditions, scale bars, sample descriptions, statistical notes, color definitions, or parameter descriptions.
+
+6. English text already embedded inside a figure should normally remain unchanged unless I explicitly request a version in which the text inside the figure itself is translated into Chinese.
+
+7. Place each translated caption directly with its corresponding figure so that figure-to-caption correspondence remains unambiguous.
+
+6. Tables
+
+1. Preserve and translate every table in the source document.
+
+2. Reconstruct tables as native, editable Microsoft Word tables whenever reasonably possible rather than inserting table screenshots.
+
+3. Preserve row and column relationships, merged cells, headers, units, notes, superscripts, subscripts, numeric values, and significance symbols.
+
+4. Do not alter numeric values, statistical values, or physical units during translation.
+
+5. Translate table titles and table notes completely.
+
+7. References
+
+1. Preserve the entire References/Bibliography section.
+
+2. As a default rule, do not translate individual bibliographic entries. Preserve author names, original article titles, journal names, volume/issue information, page numbers, DOI information, and publication years in their original bibliographic form unless I explicitly request otherwise.
+
+3. Reference numbering must remain in one-to-one correspondence with the citation numbers used in the main text.
+
+4. Do not delete, merge, reorder, or renumber references.
+
+5. Preserve DOI, URL, PMID, and similar identifiers when they appear in the source document.
+
+8. Footnotes, supplementary material, and other document elements
+
+Do not omit any of the following when present:
+- Footnotes;
+- Notes;
+- Author contributions;
+- Acknowledgements;
+- Funding;
+- Data availability;
+- Code availability;
+- Competing interests;
+- Ethics statement;
+- Supplementary Notes;
+- Supplementary Methods;
+- Supplementary Tables;
+- Supplementary Figures.
+
+Translate or preserve each item faithfully according to its content and role in the original document.
+
+9. Microsoft Word layout and formatting
+
+The final deliverable must be a structurally clear and fully editable .docx file.
+
+The layout should prioritize readability for scientific use. It is not necessary to mechanically reproduce the original journal's multi-column page design if doing so reduces readability or editability in the translated Word document.
+
+Requirements:
+1. Apply a clear hierarchy for the title and all heading levels.
+2. Use consistent paragraph formatting and avoid inconsistent font sizes, abnormal line spacing, excessive blank lines, figures overlapping text, equations extending outside page boundaries, and tables exceeding page margins.
+3. Center figures appropriately and keep every figure associated with the correct caption.
+4. Keep tables intact and avoid unreasonable splitting across pages.
+5. Keep display equations visually neat and properly aligned.
+6. Maintain clear correspondence among mathematical variables, equations, figure numbers, table numbers, and citation numbers in the main text.
+7. The final document should be suitable for direct reading, editing, annotation, and subsequent scientific use.
+
+10. Translation quality and terminology
+
+Use established Chinese terminology in the relevant scientific discipline whenever possible, especially in optics, microscopy, super-resolution imaging, biomedical imaging, signal processing, image reconstruction, mathematics, physics, computer vision, and deep learning.
+
+If a technical term has multiple possible Chinese translations, select the most contextually accurate translation and use it consistently throughout the document.
+
+Do not translate the same English technical term into several unrelated Chinese terms in different sections without a justified contextual reason.
+
+For important technical terms that could become ambiguous after translation, the first occurrence may use the format Chinese term (original English term), followed by the Chinese term or standard abbreviation consistently thereafter.
+
+11. Final completeness and quality-control check
+
+After generating the Word file, perform a full-document verification before delivery instead of immediately returning the first generated version.
+
+Check the final DOCX against the original PDF for all of the following:
+1. all sections are present;
+2. no paragraphs have been omitted;
+3. no paragraphs have been duplicated;
+4. all equations are present;
+5. all equations are native editable Word OMML equation objects;
+6. all equation symbols, superscripts, subscripts, and mathematical structures are correct;
+7. all in-text citation numbers are preserved;
+8. all figures are preserved;
+9. all figure captions are completely translated;
+10. all tables are preserved and correctly translated;
+11. all equation numbers are correct;
+12. the complete reference list is preserved;
+13. all cross-references among figures, tables, equations, and main text remain correct;
+14. no unconverted LaTeX source remains visible;
+15. there is no garbled text, abnormal font substitution, figure displacement, equation clipping, table overflow, or page-layout failure.
+
+If any of these problems are found, correct them before delivering the final document.
+
+12. Final deliverable
+
+Provide the fully translated and formatted Microsoft Word (.docx) file as the final deliverable.
+
+Do not provide only a plain-text translation, Markdown version, summary, or partial translation.
+
+The final Word document must satisfy all of the following:
+
+complete source content + accurate Chinese translation + preserved citations + preserved figures + translated figure captions + native editable Word OMML equations + editable tables + professional scientific formatting + suitable for direct reading and further editing.

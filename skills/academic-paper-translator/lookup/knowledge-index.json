@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "name": "PDF_to_Chinese_Word_Translation_Prompt_EN.txt",
+      "path": "references/PDF_to_Chinese_Word_Translation_Prompt_EN.txt"
+    },
+    {
+      "name": "学术论文中文翻译_排版参考模板.docx",
+      "path": "assets/学术论文中文翻译_排版参考模板.docx"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "apps": "./.app.json",
+  "author": {
+    "name": "eyewater"
+  },
+  "description": "完整翻译科研论文，严格保留公式、图表、引文与结构，并按规范输出可编辑 Word。",
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Other",
+    "defaultPrompt": [
+      "把这篇英文论文完整翻译成中文并输出 Word",
+      "按原文结构翻译这篇论文，保留公式和图表",
+      "检查这份论文译文是否有漏译、错译或公式错误"
+    ],
+    "developerName": "eyewater",
+    "displayName": "学术论文翻译助手",
+    "longDescription": "完整翻译科研论文，严格保留公式、图表、引文与结构，并按规范输出可编辑 Word。",
+    "shortDescription": "完整翻译科研论文，严格保留公式、图表、引文与结构，并按规范输出可编辑 Word。"
+  },
+  "name": "gpt-ea292dd0cf19eecfe3851309e4b04ba9",
+  "skills": "./skills/",
+  "version": "0.1.2"
+}

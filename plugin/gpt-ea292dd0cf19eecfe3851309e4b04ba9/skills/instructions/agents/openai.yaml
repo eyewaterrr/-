@@ -1,0 +1,4 @@
+interface:
+  default_prompt: 把这篇英文论文完整翻译成中文并输出 Word
+  display_name: 学术论文翻译助手
+  short_description: 完整翻译科研论文，严格保留公式、图表、引文与结构，并按规范输出可编辑 Word。
